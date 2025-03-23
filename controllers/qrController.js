@@ -8,7 +8,7 @@ exports.generateQR = async (req, res) => {
         }
 
 
-        const qrUrl = `https://front-end-attendance-qr-system.vercel.app/scan-qr/${employeeId}`;
+        const qrUrl = `http://localhost:5174/scan-qr/${employeeId}`;
 
         const qrCodeDataURL = await QRCode.toDataURL(qrUrl);
 
